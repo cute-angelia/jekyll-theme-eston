@@ -1,0 +1,13 @@
+{% if paginator.total_pages > 1 %}
+<nav class="nav main-pager" role="pagination" data-ani="hide" data-js="pager">
+    <span class="nav-item-alt">Page{% for page in (1..paginator.total_pages) %}{% if page == paginator.page %}<span class="active" data-js="pager-current">{{ page }}</span>{% endif %}{% endfor %}</span> of <span>{{ paginator.total_pages }}</span></span>
+    <div class="nav nav--pager">
+        {% if paginator.previous_page %}
+        <a rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="nav-item nav-prev">Previous</a>
+        {% endif %}
+        {% if paginator.next_page %}
+        <a rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="nav-item nav-next">Next</a>
+        {% endif %}
+    </div>
+</nav>
+{% endif %}

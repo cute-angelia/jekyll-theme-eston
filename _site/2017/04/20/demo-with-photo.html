@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="cyw"/>
+    
+    <title>demo with photo</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Eston" href="http://localhost:4000/feed.xml">
+
+    <link rel="stylesheet" href="/assets/css/eston-layout.min.css">
+    <link rel="stylesheet" href="/assets/css/eston-skin-default.min.css">
+    <link rel="stylesheet" href="/assets/css/font.css">
+</head>
+
+<div class="wrapper">
+
+    <header role="header" class="header" data-ani="hide" data-js="header">
+        <div class="wrapper header-wrapper">
+            <div class="nav header-item header-credit">
+                
+                &copy; 2017 ~ 2017 cyw
+                <br/>
+                <a href="https://github.com/cute-angelia/jekyll-theme-eston" target="_blank"
+                   class="nav-item nav-item-alt">Theme With Eston</a>
+            </div>
+
+            <h1 itemprop="name" class="header-item header-title">
+                <a itemprop="url" href="/" title="Eston">Eston</a>
+            </h1>
+
+            <p itemprop="description" class="header-item header-about">A simple theme.</p>
+
+            <nav class="nav header-item header-nav" role="navigation">
+                
+                <span itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav-item nav-item-current">
+                    <a itemprop="/pages/archive.html" href="/pages/archive.html"
+                       title="Archive">
+                        <span itemprop="name">Archive</span>
+                    </a>
+                </span>
+                
+                <span itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav-item nav-item-current">
+                    <a itemprop="/pages/tags.html" href="/pages/tags.html"
+                       title="Tags">
+                        <span itemprop="name">Tags</span>
+                    </a>
+                </span>
+                
+            </nav>
+
+            <div class="nav header-item header-links">
+
+            </div>
+        </div>
+    </header>
+
+    <main role="main" class="main">
+
+        <div class="wrapper">
+            <article itemscope itemtype="http://schema.org/BlogPosting"
+         class="post post--photo post--cover post--index main-item main-post" data-ani="hide" data-js="post">
+    <div class="post-inner">
+
+        <figure class="post-media">
+            
+            <img itemprop="image" src="http://www.ufo-1.cn/uploads/allimg/201603/1-16033111322H53.jpg" alt="Drew Bardana">
+            
+            
+        </figure>
+
+        <section class="post-item post-body">
+            <div class="wrapper post-wrapper">
+                <h2 itemprop="headline" class="post-title">
+                    <a itemprop="url" href="/2017/04/20/demo-with-photo.html" title="demo with photo">demo with photo</a>
+                </h2>
+                <p itemprop="description" class="post-excerpt" data-js="excerpt">
+                    <p>hello, everyone ~ come on</p>
+
+                </p>
+                <div class="btn post-tags">
+                    
+                    <span class="tags">
+                        
+                            <a href="/tags.html#photo" title="photo" class="btn-item">
+                                <span itemprop="keywords">#photo</span>
+                            </a>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="post-item post-footer">
+            <div class="wrapper post-wrapper">
+                <div class="meta post-meta">
+                    <a itemprop="datePublished" href="/2017/04/20/demo-with-photo.html"
+                       class="icon-ui icon-ui-date meta-item meta-date">
+                        <span class="meta-count">2017-04-20</span>
+                    </a>
+                    <!--<a href="drew-bardana/index.html#comments" class="icon-ui icon-ui-comment meta-item meta-comment">-->
+                    <!--<span class="meta-count disqus-comment-count" data-disqus-identifier="3">0</span>-->
+                    <!--<span class="meta-plural"> comments</span>-->
+                    <!--</a>-->
+                </div>
+            </div>
+        </footer>
+    </div>
+</article>
+
+
+
+<div id="disqus_thread">
+    <a href="javascript:void(0);" onclick="disqus();return false;">评论/查看评论 (Show Comments)</a>
+</div>
+
+<script>
+    var disqus_loaded = false;
+    function disqus() {
+        if (!disqus_loaded) {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//rose1988c.disqus.com/embed.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(dsq);
+        }
+    }
+</script>
+
+        </div>
+
+        <!-- 首页分页 -->
+        
+        <!-- 上篇下篇文章 -->
+        
+<nav class="nav main-pager" role="pagination" data-ani="hide" data-js="pager">
+    <div class="nav nav--pager">
+        
+        <a rel="prev" href="/2017/04/20/demo-text.html"
+           class="nav-item nav-prev">demo</a>
+        
+
+        
+        <a rel="next" href="/2017/04/20/demo-with-video.html"
+           class="nav-item nav-next">demo2 with video</a>
+        
+    </div>
+</nav>
+
+    </main>
+</div>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/eston-core.min.js"></script>
+<script>
+    // Events.
+    eston.events.on('hover.start', function (e, $header, $cover, $footer) {
+        $header.attr('data-ani', 'slide-in-down');
+        $cover.attr('data-ani', 'fade-in');
+        $footer.attr('data-ani', 'slide-in-up');
+    });
+    eston.events.on('hover.stop', function (e, $header, $cover, $footer) {
+        $header.attr('data-ani', 'fade-out-up');
+        $cover.attr('data-ani', 'fade-out');
+        $footer.attr('data-ani', 'fade-out-down');
+    });
+    eston.events.on('popup.open', function (e, $popup, $list) {
+        $list.attr('data-ani', 'slide-in-up');
+    });
+    eston.events.on('popup.close', function (e, $popup, $list) {
+        $list.attr('data-ani', 'fade-out-down');
+    });
+    eston.events.on('start.complete', function (e, $posts) {
+        $posts.attr('data-ani', 'slide-in-up');
+        $('[data-js~="pager"]').attr('data-ani', 'fade-in');
+    });
+    // Start.
+    eston.start({});
+
+    // Show header.
+    $('[data-js~="header"]').attr('data-ani', 'fade-in');
+</script>
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-98154695-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

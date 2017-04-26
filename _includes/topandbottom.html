@@ -1,0 +1,15 @@
+{% if page.id %}
+<nav class="nav main-pager" role="pagination" data-ani="hide" data-js="pager">
+    <div class="nav nav--pager">
+        {% if page.previous %}
+        <a rel="prev" href="{{ site.root }}{{ page.previous.url }}"
+           class="nav-item nav-prev">{{ page.previous.title }}</a>
+        {% endif %}
+
+        {% if page.next %}
+        <a rel="next" href="{{ site.root }}{{ page.next.url }}"
+           class="nav-item nav-next">{{ page.next.title }}</a>
+        {% endif %}
+    </div>
+</nav>
+{% endif %}

@@ -1,0 +1,16 @@
+<div id="disqus_thread">
+    <a href="javascript:void(0);" onclick="disqus();return false;">评论/查看评论 (Show Comments)</a>
+</div>
+
+<script>
+    var disqus_loaded = false;
+    function disqus() {
+        if (!disqus_loaded) {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//{{ site.disqus }}.disqus.com/embed.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(dsq);
+        }
+    }
+</script>
