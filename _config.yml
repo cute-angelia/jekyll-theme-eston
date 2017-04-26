@@ -4,6 +4,8 @@ subtitle: "A simple theme."
 root: ""
 mytheme: "/"
 
+# Build settings
+baseurl: "/jekyll-theme-eston" # Change this to your relative path (ex: /blog/), or leave just a /
 # 分页
 paginate: 5
 paginate_path: "page:num"
