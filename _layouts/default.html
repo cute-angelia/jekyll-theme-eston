@@ -37,7 +37,7 @@
             <nav class="nav header-item header-nav" role="navigation">
                 {% for nav in site.navigations %}
                 <span itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav-item nav-item-current">
-                    <a itemprop="{{ site.root }}{{ nav.href }}" href="{{ site.root }}{{ nav.href }}"
+                    <a itemprop="{{ site.baseurl }}{{ nav.href }}" href="{{ site.baseurl }}{{ nav.href }}"
                        title="{{ nav.title }}">
                         <span itemprop="name">{{ nav.title }}</span>
                     </a>

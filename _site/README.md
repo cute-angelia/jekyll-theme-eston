@@ -1,6 +1,6 @@
 # eston
 
-![preview](./assets/img/screenshot-127.0.0.1-4000-2017-04-26-23-42-12.png)
+![preview](//://assets/img/screenshot-127.0.0.1-4000-2017-04-26-23-42-12.png)
 
 ## Installation
 
